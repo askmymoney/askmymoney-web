@@ -13,33 +13,38 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free NextJS Shadcn template.",
+    question: "Is my financial data secure?",
+    answer: "Absolutely. AskMyMoney uses Plaid's bank-grade security infrastructure. Your bank credentials are never stored on our servers. All data is encrypted in transit and at rest, and we follow industry best practices for data protection.",
     value: "item-1",
   },
   {
-    question: "Duis aute irure dolor in reprehenderit in voluptate velit?",
+    question: "What banks and financial institutions are supported?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam consectetur sapiente, iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "Through Plaid, AskMyMoney supports over 12,000 financial institutions including all major US banks, credit unions, and investment platforms. This includes Chase, Bank of America, Wells Fargo, Citi, and many more.",
     value: "item-2",
   },
   {
     question:
-      "Lorem ipsum dolor sit amet Consectetur natus dolor minus quibusdam?",
+      "How does AskMyMoney access my bank accounts?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis.",
+      "We use Plaid's secure OAuth connection. You authenticate directly with your bank through Plaid Link - we never see your banking credentials. You can revoke access at any time through your bank's settings.",
     value: "item-3",
   },
   {
-    question: "Excepteur sint occaecat cupidata non proident sunt?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "Can I disconnect my bank accounts at any time?",
+    answer: "Yes, absolutely. You have full control over your connected accounts. You can disconnect any account instantly through your settings, and all associated data will be removed from our system.",
     value: "item-4",
   },
   {
     question:
-      "Enim ad minim veniam, quis nostrud exercitation ullamco laboris?",
-    answer: "consectetur adipisicing elit. Sint labore.",
+      "What AI model powers AskMyMoney?",
+    answer: "AskMyMoney is powered by Claude, Anthropic's advanced AI assistant. Claude excels at understanding context, analyzing financial patterns, and providing helpful insights in natural conversation.",
     value: "item-5",
+  },
+  {
+    question: "How does pricing work?",
+    answer: "Start free with sandbox mode using demo data. Upgrade to Personal ($9/mo) to connect real accounts. Premium ($29/mo) adds advanced analytics and priority features. No long-term contracts - cancel anytime.",
+    value: "item-6",
   },
 ];
 

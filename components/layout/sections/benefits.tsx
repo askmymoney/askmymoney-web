@@ -10,28 +10,28 @@ interface BenefitsProps {
 
 const benefitList: BenefitsProps[] = [
   {
-    icon: "Blocks",
-    title: "Build Brand Trust",
+    icon: "MessageCircle",
+    title: "Natural Conversations",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Ask questions about your finances in plain English. No complex dashboards or confusing menus - just talk to your money naturally.",
   },
   {
-    icon: "LineChart",
-    title: "More Leads",
+    icon: "Zap",
+    title: "Instant Insights",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Get real-time analysis of your spending, balances, and transactions. AI-powered insights delivered in seconds, not hours.",
   },
   {
-    icon: "Wallet",
-    title: "Higher Conversions",
+    icon: "Bell",
+    title: "Smart Alerts",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Proactive warnings about low balances, high credit utilization, and unusual spending patterns. Stay on top of your finances effortlessly.",
   },
   {
-    icon: "Sparkle",
-    title: "Test Marketing Ideas",
+    icon: "PieChart",
+    title: "Spending Analysis",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Automatic categorization and trend detection. Understand where your money goes with intelligent spending breakdowns.",
   },
 ];
 
@@ -43,12 +43,12 @@ export const BenefitsSection = () => {
           <h2 className="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Shortcut to Success
+            Financial Intelligence at Your Fingertips
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            AskMyMoney transforms how you interact with your finances. No more
+            spreadsheets, no more manual tracking. Just intelligent conversations
+            that give you the answers you need, when you need them.
           </p>
         </div>
 

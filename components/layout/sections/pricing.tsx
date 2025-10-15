@@ -29,61 +29,61 @@ const plans: PlanProps[] = [
     popular: 0,
     price: 0,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
+      "Get started with AskMyMoney at no cost. Perfect for trying it out.",
+    buttonText: "Start Free",
     benefitList: [
-      "1 team member",
-      "1 GB storage",
-      "Upto 2 pages",
+      "1 bank account",
+      "30 queries per month",
+      "Core AI features",
+      "Transaction search",
       "Community support",
-      "AI assistance",
     ],
   },
   {
-    title: "Premium",
+    title: "Monthly",
     popular: 1,
-    price: 45,
+    price: 8,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get starterd",
+      "Full unlimited access to all features with flexible monthly billing.",
+    buttonText: "Get Started",
     benefitList: [
-      "4 team member",
-      "8 GB storage",
-      "Upto 6 pages",
+      "Unlimited bank accounts",
+      "Unlimited queries",
+      "All AI features",
+      "Advanced analytics",
       "Priority support",
-      "AI assistance",
     ],
   },
   {
-    title: "Enterprise",
+    title: "Annual",
     popular: 0,
-    price: 120,
+    price: 90,
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
+      "Save with annual billing. Best value for committed users.",
+    buttonText: "Save with Annual",
     benefitList: [
-      "10 team member",
-      "20 GB storage",
-      "Upto 10 pages",
-      "Phone & email support",
-      "AI assistance",
+      "Unlimited bank accounts",
+      "Unlimited queries",
+      "All AI features",
+      "Advanced analytics",
+      "Priority support",
     ],
   },
 ];
 
 export const PricingSection = () => {
   return (
-    <section className="container py-24 sm:py-32">
+    <section id="pricing" className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
         Pricing
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Get unlimitted access
+        Simple, Transparent Pricing
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14">
-        Lorem ipsum dolor sit amet consectetur adipisicing reiciendis.
+        Start free in sandbox mode, then upgrade when you&apos;re ready to connect your real accounts.
       </h3>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
@@ -106,7 +106,7 @@ export const PricingSection = () => {
 
                 <div>
                   <span className="text-3xl font-bold">${price}</span>
-                  <span className="text-muted-foreground"> /month</span>
+                  <span className="text-muted-foreground"> {title === "Annual" ? "/year" : "/month"}</span>
                 </div>
               </CardHeader>
 

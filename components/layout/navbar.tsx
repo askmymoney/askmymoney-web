@@ -35,16 +35,16 @@ interface FeatureProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#benefits",
+    label: "Benefits",
   },
   {
-    href: "#team",
-    label: "Team",
+    href: "#features",
+    label: "Features",
   },
   {
-    href: "#contact",
-    label: "Contact",
+    href: "#pricing",
+    label: "Pricing",
   },
   {
     href: "#faq",
@@ -54,18 +54,18 @@ const routeList: RouteProps[] = [
 
 const featureList: FeatureProps[] = [
   {
-    title: "Showcase Your Value ",
-    description: "Highlight how your product solves user problems.",
+    title: "AI-Powered Insights",
+    description: "Get intelligent financial analysis through natural conversation with Claude AI.",
   },
   {
-    title: "Build Trust",
+    title: "Bank-Grade Security",
     description:
-      "Leverages social proof elements to establish trust and credibility.",
+      "Connect securely to 12,000+ institutions via Plaid's industry-standard API.",
   },
   {
-    title: "Capture Leads",
+    title: "Instant Analysis",
     description:
-      "Make your lead capture form visually appealing and strategically.",
+      "Real-time spending insights, transaction search, and account health monitoring.",
   },
 ];
 
@@ -74,8 +74,14 @@ export const Navbar = () => {
   return (
     <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
       <Link href="/" className="font-bold text-lg flex items-center">
-        <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-        Shadcn
+        <Image
+          src="/logo.png"
+          alt="AskMyMoney Logo"
+          width={36}
+          height={36}
+          className="w-9 h-9 mr-2 rounded-lg"
+        />
+        AskMyMoney
       </Link>
       {/* <!-- Mobile --> */}
       <div className="flex items-center lg:hidden">
@@ -95,8 +101,14 @@ export const Navbar = () => {
               <SheetHeader className="mb-4 ml-4">
                 <SheetTitle className="flex items-center">
                   <Link href="/" className="flex items-center">
-                    <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-                    Shadcn
+                    <Image
+                      src="/logo.png"
+                      alt="AskMyMoney Logo"
+                      width={36}
+                      height={36}
+                      className="w-9 h-9 mr-2 rounded-lg"
+                    />
+                    AskMyMoney
                   </Link>
                 </SheetTitle>
               </SheetHeader>
@@ -134,13 +146,19 @@ export const Navbar = () => {
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
-                <Image
-                  src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                  alt="RadixLogo"
-                  className="h-full w-full rounded-md object-cover"
-                  width={600}
-                  height={600}
-                />
+                <div className="h-full w-full rounded-md bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center p-6">
+                  <div className="text-center space-y-4">
+                    <Image
+                      src="/logo.png"
+                      alt="AskMyMoney Logo"
+                      width={80}
+                      height={80}
+                      className="mx-auto rounded-lg"
+                    />
+                    <div className="text-xl font-semibold">AskMyMoney</div>
+                    <div className="text-sm text-muted-foreground">AI Financial Assistant</div>
+                  </div>
+                </div>
                 <ul className="flex flex-col gap-2">
                   {featureList.map(({ title, description }) => (
                     <li
@@ -178,7 +196,7 @@ export const Navbar = () => {
         <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
           <Link
             aria-label="View on GitHub"
-            href="https://github.com/nobruf/shadcn-landing-page.git"
+            href="https://github.com/askmymoney"
             target="_blank"
           >
             <Github className="size-5" />

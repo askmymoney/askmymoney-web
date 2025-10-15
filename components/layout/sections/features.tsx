@@ -10,40 +10,40 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "TabletSmartphone",
-    title: "Mobile Friendly",
+    icon: "Layers",
+    title: "Multi-Account Support",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "Connect all your financial accounts in one place. View checking, savings, credit cards, and investments together.",
   },
   {
-    icon: "BadgeCheck",
-    title: "Social Proof",
+    icon: "Shield",
+    title: "Bank-Grade Security",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "Powered by Plaid's industry-standard API with OAuth authentication. Your credentials are never stored.",
   },
   {
-    icon: "Goal",
-    title: "Targeted Content",
+    icon: "Brain",
+    title: "AI-Powered Analysis",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "Claude AI understands context and provides intelligent insights about your financial patterns and trends.",
   },
   {
-    icon: "PictureInPicture",
-    title: "Strong Visuals",
+    icon: "Lock",
+    title: "Privacy First",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "Your financial data stays secure and private. We never share or sell your information to third parties.",
   },
   {
-    icon: "MousePointerClick",
-    title: "Clear CTA",
+    icon: "Search",
+    title: "Smart Transaction Search",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "Find transactions using natural language. Ask about specific purchases, merchants, or date ranges.",
   },
   {
-    icon: "Newspaper",
-    title: "Clear Headline",
+    icon: "TrendingUp",
+    title: "Category Insights",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Automatic spending categorization and analysis. See exactly where your money goes each month.",
   },
 ];
 
@@ -55,13 +55,12 @@ export const FeaturesSection = () => {
       </h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        What Makes Us Different
+        Built for Security and Intelligence
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
+        AskMyMoney combines enterprise-grade security with cutting-edge AI to
+        give you a financial assistant that&apos;s both powerful and trustworthy.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
